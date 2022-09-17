@@ -47,6 +47,9 @@ class Gravity_Forms_Math_Captcha_Admin {
       // Add the math captcha field to the Gravity Forms editor.
       add_filter( 'gform_add_field_buttons', array( $this, 'add_math_captcha_field' ) );
       add_filter( 'gform_field_type_title' , array( $this, 'add_math_captcha_title' ), 10, 2 );
+      add_filter( 'gform_editor_js_set_default_values', array( $this, 'label' ) );
+
+
       add_action( 'gform_editor_js', array( $this, 'math_captcha_gform_editor_js' ) );
       add_action( 'gform_field_standard_settings', array( $this, 'math_captcha_settings' ), 10, 2 );
       add_filter( 'gform_tooltips', array( $this, 'math_captcha_type_tooltip' ) );
@@ -99,11 +102,6 @@ class Gravity_Forms_Math_Captcha_Admin {
 		wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'js/admin.js', __FILE__ ), array( 'jquery', 'gform_form_editor' ), Gravity_Forms_Math_Captcha::VERSION );
 	}
 
-   /**
-    * Add a custom field button to the Advanced Fields tab in the field editor.
-    *
-    * @since    1.0.0
-    */
    public function add_math_captcha_field( $field_groups ) {
       foreach ( $field_groups as &$group ){
 
@@ -112,7 +110,8 @@ class Gravity_Forms_Math_Captcha_Admin {
             $group['fields'][] = array(
                'class'   => 'button',
                'value'   => __( 'Math Captcha', $this->plugin_slug ),
-               'onclick' => "StartAddField('math_captcha');"
+                'data-type' => 'math_captcha',
+               //'onclick' => "StartAddField('math_captcha');"
             );
             break;
          }
@@ -120,16 +119,18 @@ class Gravity_Forms_Math_Captcha_Admin {
       return $field_groups;
    }
 
-   /**
-    * Adds name of the field to Gravity Forms field editor.
-    *
-    * @since    1.0.0
-    */
    public function add_math_captcha_title( $title, $field_type ) {
       if ( $field_type == 'math_captcha' ) {
          return __( 'Math Captcha', $this->plugin_slug );
       }
    }
+
+    public function label() { ?>
+        case 'math_captcha':
+        field.label = '<?php echo __( 'Math Captcha', $this->plugin_slug ); ?>';
+        break;
+        <?php
+    }
 
    /**
     * Execute javascript technicalitites for the field to load correctly.
