@@ -1,0 +1,176 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Gravity Forms Math Captcha\n"
+"POT-Creation-Date: 2022-09-17 15:13+0430\n"
+"PO-Revision-Date: 2022-09-17 15:24+0430\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n==0 || n==1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: gravity-forms-math-captcha.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:81
+msgid ""
+"The Gravity Forms Math Captcha plugin requires Gravity Forms to be installed "
+"and activated. "
+msgstr ""
+
+#: admin/class-gravity-forms-math-captcha-admin.php:81
+msgid "Please install Gravity Forms now."
+msgstr ""
+
+#: admin/class-gravity-forms-math-captcha-admin.php:114
+#: admin/class-gravity-forms-math-captcha-admin.php:130
+msgid "Math Captcha"
+msgstr "کپچا عدد"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:169
+#: admin/class-gravity-forms-math-captcha-admin.php:188
+msgid "Math Captcha Display"
+msgstr "نمایش کپچا عدد و حروف"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:173
+msgid "A mix of numbers and words"
+msgstr "حداکثر تعداد حرف یا عدد"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:174
+msgid "Numbers only"
+msgstr "فقط عدد"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:175
+msgid "Words only"
+msgstr "فقط کلمه"
+
+#: admin/class-gravity-forms-math-captcha-admin.php:188
+msgid ""
+"Select how to display the math-based captcha. The numbers in the math "
+"question can be displayed as numerals, words, or a mix of both."
+msgstr ""
+
+#: public/class-gravity-forms-math-captcha.php:115
+msgid "zero"
+msgstr "صفر"
+
+#: public/class-gravity-forms-math-captcha.php:116
+msgid "one"
+msgstr "یک"
+
+#: public/class-gravity-forms-math-captcha.php:117
+msgid "two"
+msgstr "دو"
+
+#: public/class-gravity-forms-math-captcha.php:118
+msgid "three"
+msgstr "سه"
+
+#: public/class-gravity-forms-math-captcha.php:119
+msgid "four"
+msgstr "چهار"
+
+#: public/class-gravity-forms-math-captcha.php:120
+msgid "five"
+msgstr "پنج"
+
+#: public/class-gravity-forms-math-captcha.php:121
+msgid "six"
+msgstr "شش"
+
+#: public/class-gravity-forms-math-captcha.php:122
+msgid "seven"
+msgstr "هفت"
+
+#: public/class-gravity-forms-math-captcha.php:123
+msgid "eight"
+msgstr "هشت"
+
+#: public/class-gravity-forms-math-captcha.php:124
+msgid "nine"
+msgstr "نه"
+
+#: public/class-gravity-forms-math-captcha.php:125
+msgid "ten"
+msgstr "ده"
+
+#: public/class-gravity-forms-math-captcha.php:126
+msgid "eleven"
+msgstr "یازده"
+
+#: public/class-gravity-forms-math-captcha.php:127
+msgid "twelve"
+msgstr "دوازده"
+
+#: public/class-gravity-forms-math-captcha.php:128
+msgid "thirteen"
+msgstr "سیزده"
+
+#: public/class-gravity-forms-math-captcha.php:129
+msgid "fourteen"
+msgstr "چهارده"
+
+#: public/class-gravity-forms-math-captcha.php:130
+msgid "fifteen"
+msgstr "پانزده"
+
+#: public/class-gravity-forms-math-captcha.php:131
+msgid "sixteen"
+msgstr "شانزده"
+
+#: public/class-gravity-forms-math-captcha.php:132
+msgid "seventeen"
+msgstr "هفده"
+
+#: public/class-gravity-forms-math-captcha.php:133
+msgid "eighteen"
+msgstr "هجده"
+
+#: public/class-gravity-forms-math-captcha.php:134
+msgid "nineteen"
+msgstr "نوزده"
+
+#: public/class-gravity-forms-math-captcha.php:135
+msgid "twenty"
+msgstr "بیست"
+
+#: public/class-gravity-forms-math-captcha.php:164
+msgid "minus"
+msgstr "منهای"
+
+#: public/class-gravity-forms-math-captcha.php:171
+msgid "plus"
+msgstr "به علاوه"
+
+#: public/class-gravity-forms-math-captcha.php:300
+msgid "Sorry, that wasn't the correct answer. Please try again."
+msgstr "پاسخ کلید امنیتی اشتباه هست ، دوباره تلاش کنید."
+
+#. Plugin Name of the plugin/theme
+msgid "Gravity Forms Math Captcha"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://mandiwise.com/wordpress/gravity-forms-math-captcha/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add a simple, non-image-based math captcha field to Gravity Forms."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mandi Wise"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://mandiwise.com"
+msgstr ""
